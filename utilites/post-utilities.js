@@ -2,7 +2,7 @@
 const axios = require("axios");
 
 const baseUrl = "https://www.instagram.com/graphql/query/";
-const queryHash = "b3055c01b4b222b8a47dc12b090e4e64";
+const queryHash = process.env.QUERY_HASH;
 
 const initialVariables = {
     "child_comment_count": 2,
